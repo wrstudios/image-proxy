@@ -1,6 +1,6 @@
 {
   "name": "@wrstudios/image-proxy-client",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "image proxy utilities for client apps",
   "main": "dist/image-proxy-client.cjs.js",
   "module": "dist/image-proxy-client.esm.js",
@@ -41,6 +41,6 @@
   },
   "homepage": "https://github.com/wrstudios/image-proxy-client#readme",
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   }
 }
