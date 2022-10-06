@@ -1,6 +1,6 @@
 {
   "name": "@wrstudios/image-proxy",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "image proxy utilities for LW apps",
   "main": "dist/image-proxy.cjs.js",
   "module": "dist/image-proxy.esm.js",
