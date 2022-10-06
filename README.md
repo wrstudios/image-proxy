@@ -20,7 +20,7 @@ yarn add @wrstudios/image-proxy
 
 ## Quick Start
 ```js
-import getProxiedImageUrl from "@wrstudios/image-proxy";
+import { getProxiedImageUrl } from "@wrstudios/image-proxy";
 
 const strategy = "swap"
 const url = "http://something.com/image"
