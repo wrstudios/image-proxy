@@ -1,4 +1,4 @@
-# image-proxy-client
+# image-proxy
 image proxy utilities for client apps
 
 ## Strategies
@@ -8,7 +8,7 @@ image proxy utilities for client apps
 
 ## Installation
 ```sh
-yarn add @wrstudios/image-proxy-client
+yarn add @wrstudios/image-proxy
 ```
 
 ## Publishing a new version
@@ -20,7 +20,7 @@ yarn add @wrstudios/image-proxy-client
 
 ## Quick Start
 ```js
-import getProxiedImageUrl from "@wrstudios/image-proxy-client";
+import getProxiedImageUrl from "@wrstudios/image-proxy";
 
 const strategy = "swap"
 const url = "http://something.com/image"

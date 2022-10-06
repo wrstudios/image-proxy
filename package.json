@@ -1,9 +1,9 @@
 {
-  "name": "@wrstudios/image-proxy-client",
+  "name": "@wrstudios/image-proxy",
   "version": "2.1.0",
-  "description": "image proxy utilities for client apps",
-  "main": "dist/image-proxy-client.cjs.js",
-  "module": "dist/image-proxy-client.esm.js",
+  "description": "image proxy utilities for LW apps",
+  "main": "dist/image-proxy.cjs.js",
+  "module": "dist/image-proxy.esm.js",
   "author": "Lone Wolf Technologies",
   "license": "MIT",
   "files": [
@@ -34,12 +34,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wrstudios/image-proxy-client.git"
+    "url": "git+https://github.com/wrstudios/image-proxy.git"
   },
   "bugs": {
-    "url": "https://github.com/wrstudios/image-proxy-client/issues"
+    "url": "https://github.com/wrstudios/image-proxy/issues"
   },
-  "homepage": "https://github.com/wrstudios/image-proxy-client#readme",
+  "homepage": "https://github.com/wrstudios/image-proxy#readme",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   }
