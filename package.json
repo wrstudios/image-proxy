@@ -1,0 +1,46 @@
+{
+  "name": "@wrstudios/image-proxy-client",
+  "version": "1.2.4",
+  "description": "image proxy utilities for client apps",
+  "main": "dist/image-proxy-client.cjs.js",
+  "module": "dist/image-proxy-client.esm.js",
+  "author": "Lone Wolf Technologies",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "test": "jest",
+    "bump": "echo \"Please use one of the following commands:\n  bump:major - New version includes breaking changes\n  bump:minor - New version could potentially include breaking changes\n  bump:patch - New version definitely does not include breaking changes\n\" && exit 1",
+    "bump:major": "yarn build && yarn version --major --no-git-tag-version && yarn bump-readme && yarn commit-new-version && yarn tag-new-version && yarn push-new-version",
+    "bump:minor": "yarn build && yarn version --minor --no-git-tag-version && yarn bump-readme && yarn commit-new-version && yarn tag-new-version && yarn push-new-version",
+    "bump:patch": "yarn build && yarn version --patch --no-git-tag-version && yarn bump-readme && yarn commit-new-version && yarn tag-new-version && yarn push-new-version",
+    "bump-readme": "sh ./scripts/bump-readme.sh $npm_package_version",
+    "commit-new-version": "git commit -am \"v$npm_package_version\"",
+    "tag-new-version": "git tag \"v$npm_package_version\" -am \"v$npm_package_version\"",
+    "push-new-version": "git push --follow-tags"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "jest": "^24.1.0",
+    "rollup": "^1.2.2",
+    "rollup-plugin-babel": "^4.3.2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wrstudios/image-proxy-client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wrstudios/image-proxy-client/issues"
+  },
+  "homepage": "https://github.com/wrstudios/image-proxy-client#readme",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  }
+}
