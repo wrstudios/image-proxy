@@ -1,6 +1,6 @@
 {
   "name": "@wrstudios/image-proxy-client",
-  "version": "1.2.4",
+  "version": "2.0.0",
   "description": "image proxy utilities for client apps",
   "main": "dist/image-proxy-client.cjs.js",
   "module": "dist/image-proxy-client.esm.js",
